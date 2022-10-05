@@ -1,0 +1,2033 @@
+2022-10-05 18:39:36,018 DEBUG c.i.d.s.SdkWebserviceApplication [main] SdkWebserviceApplication started...
+2022-10-05 18:39:36,837 INFO o.s.b.StartupInfoLogger [main] Starting SdkWebserviceApplication on DESKTOP-VA2PSPB with PID 6976 (started by Dolphin in C:\Users\Dolphin\Desktop\All SDK\Ilham_Eldi)
+2022-10-05 18:39:36,852 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2022-10-05 18:39:36,857 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-10-05 18:39:37,009 INFO o.s.c.s.AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70dd7e15: startup date [Wed Oct 05 18:39:37 WIB 2022]; root of context hierarchy
+2022-10-05 18:39:40,265 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2022-10-05 18:39:40,314 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2022-10-05 18:39:40,340 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-05 18:39:40,344 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.31
+2022-10-05 18:39:40,369 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-13.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Dolphin/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin/server;C:/Users/Dolphin/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Dolphin\AppData\Local\Microsoft\WindowsApps;C:\Users\Dolphin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dolphin\AppData\Local\GitHubDesktop\bin;C:\Windows\system32;;.]
+2022-10-05 18:39:40,561 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2022-10-05 18:39:40,563 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 3561 ms
+2022-10-05 18:39:41,906 INFO o.s.b.w.s.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2022-10-05 18:39:41,915 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 18:39:41,916 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-10-05 18:39:41,917 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-10-05 18:39:41,917 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2022-10-05 18:39:41,918 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpTraceFilter' to: [/*]
+2022-10-05 18:39:41,920 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2022-10-05 18:39:43,455 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-10-05 18:39:46,258 INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70dd7e15: startup date [Wed Oct 05 18:39:37 WIB 2022]; root of context hierarchy
+2022-10-05 18:39:47,071 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/hit/{country}]}" onto public java.lang.String com.imi.dolphin.sdkwebservice.controller.Controller.covid(java.lang.String)
+2022-10-05 18:39:47,079 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/ping]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doPingRequest(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,083 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/pingAuth]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doPingAuthRequest(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,088 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/form]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildForm(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,093 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/productinfo]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doQueryProductInfo(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,098 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/status/]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doGetSrnResult(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,103 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/button]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildButton(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,107 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/carousel]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildCarousel(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,112 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/forms]}" onto public java.lang.String com.imi.dolphin.sdkwebservice.controller.Controller.getStarted()
+2022-10-05 18:39:47,116 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/messages]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doGetMessages(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,120 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/transferAgent]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doTransferToAgent(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,126 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/image]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildImage(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,131 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/sendMail]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doSendMail(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,135 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/modifycustomername]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doClearCustomerName(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,140 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/sendLocation]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildSendLocation(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,145 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/customers]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doQueryCustomerInfo(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,151 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/quickreplies]}" onto public com.imi.dolphin.sdkwebservice.model.ExtensionResult com.imi.dolphin.sdkwebservice.controller.Controller.doBuildQuickReplies(com.imi.dolphin.sdkwebservice.model.ExtensionRequest)
+2022-10-05 18:39:47,205 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-10-05 18:39:47,215 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-10-05 18:39:47,596 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-10-05 18:39:47,598 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-10-05 18:39:51,864 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-05 18:39:52,112 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2022-10-05 18:39:52,117 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2022-10-05 18:39:52,130 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-10-05 18:39:53,070 INFO o.s.j.e.MBeanExporter [main] Registering beans for JMX exposure on startup
+2022-10-05 18:39:53,408 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2022-10-05 18:39:53,607 INFO o.a.j.l.DirectJDKLog [main] Using a shared selector for servlet write/read
+2022-10-05 18:39:53,775 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-05 18:39:53,799 INFO o.s.b.StartupInfoLogger [main] Started SdkWebserviceApplication in 17.644 seconds (JVM running for 19.585)
+2022-10-05 18:39:56,866 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-10-05 18:39:56,868 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] FrameworkServlet 'dispatcherServlet': initialization started
+2022-10-05 18:39:57,037 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] FrameworkServlet 'dispatcherServlet': initialization completed in 166 ms
+2022-10-05 18:40:05,239 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] Initialising httpUtil with default configuration ignoreCertificate: true
+2022-10-05 18:40:07,223 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] configureToIgnoreCertificate Builder: okhttp3.OkHttpClient$Builder@5ac8adc5
+2022-10-05 18:40:11,646 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@5ac8adc5
+2022-10-05 18:40:43,622 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] checkServerTrusted chain: [[
+[
+  Version: V3
+  Subject: CN=*.p.rapidapi.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21154787475477487457715228792401611764400760598600972467903271839980418181232632547580009664516493042174658953311808910227447726603326973464150198068644289665727567272120035473742606438108203027313688472451388541830990354978600662453350723336884643935059455328067042422795096193079608340769232138963503352947031679916511763704883825327896337908628842693118409494130638711237879345751026794080037135895226473376747867380942840945943607622024439397804498499368094958287747344842289575638619181632543456025309093343086602589107393117317314598062494663312472476430803406516011573090592170575057248793094431177797799011637
+  public exponent: 65537
+  Validity: [From: Fri Jul 08 07:00:00 WIB 2022,
+               To: Mon Aug 07 06:59:59 WIB 2023]
+  Issuer: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  SerialNumber: [    0dc46029 b68dca56 71a43222 516e0d86]
+
+Certificate Extensions: 10
+[1]: ObjectId: 1.3.6.1.4.1.11129.2.4.2 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 82 01 6D 04 82 01 69   01 67 00 76 00 E8 3E D0  ...m...i.g.v..>.
+0010: DA 3E F5 06 35 32 E7 57   28 BC 89 6B C9 03 D3 CB  .>..52.W(..k....
+0020: D1 11 6B EC EB 69 E1 77   7D 6D 06 BD 6E 00 00 01  ..k..i.w.m..n...
+0030: 81 DB 35 E1 EA 00 00 04   03 00 47 30 45 02 20 61  ..5.......G0E. a
+0040: 97 06 E4 6B F7 03 4F 7D   2C 63 B4 6C 33 E2 3D B8  ...k..O.,c.l3.=.
+0050: 69 7A 2D 11 62 EF 6B 1B   B6 FF AB A8 2A 4A 24 02  iz-.b.k.....*J$.
+0060: 21 00 D3 02 86 27 82 05   A5 9E E9 1D F3 E6 4B 4F  !....'........KO
+0070: 22 FA 8E 4B D9 C7 84 30   87 26 3B 41 EF B5 85 F3  "..K...0.&;A....
+0080: 18 06 00 76 00 35 CF 19   1B BF B1 6C 57 BF 0F AD  ...v.5.....lW...
+0090: 4C 6D 42 CB BB B6 27 20   26 51 EA 3F E1 2A EF A8  LmB...' &Q.?.*..
+00A0: 03 C3 3B D6 4C 00 00 01   81 DB 35 E1 42 00 00 04  ..;.L.....5.B...
+00B0: 03 00 47 30 45 02 21 00   CC EA 32 C4 A6 99 B5 F9  ..G0E.!...2.....
+00C0: 16 D3 B8 BB 21 27 69 83   D2 2B 5D A5 26 64 5E 25  ....!'i..+].&d^%
+00D0: 73 CD 2A 12 3D F3 CD 4F   02 20 23 F2 27 FD 55 99  s.*.=..O. #.'.U.
+00E0: 83 C5 01 3C 34 D9 C3 64   C3 1B 20 C4 80 26 CD 2F  ...<4..d.. ..&./
+00F0: 1D 57 62 69 D5 FA C7 EA   7C 7A 00 75 00 B3 73 77  .Wbi.....z.u..sw
+0100: 07 E1 84 50 F8 63 86 D6   05 A9 DC 11 09 4A 79 2D  ...P.c.......Jy-
+0110: B1 67 0C 0B 87 DC F0 03   0E 79 36 A5 9A 00 00 01  .g.......y6.....
+0120: 81 DB 35 E1 80 00 00 04   03 00 46 30 44 02 20 54  ..5.......F0D. T
+0130: 4C C3 3A 62 67 6E 67 F0   4D C3 C6 F3 1E A3 16 59  L.:bgng.M......Y
+0140: E6 C9 47 15 03 05 EA 43   34 3E 51 2E 01 C4 32 02  ..G....C4>Q...2.
+0150: 20 62 17 37 5B 82 CB 97   D4 05 28 42 2B DB 9E 50   b.7[.....(B+..P
+0160: F4 C7 BC 01 D1 66 9B F7   63 76 DE 38 B2 EF A8 0C  .....f..cv.8....
+0170: 19                                                 .
+
+
+[2]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.sca1b.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.sca1b.amazontrust.com/sca1b.crt
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+[4]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:false
+  PathLen: undefined
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.sca1b.amazontrust.com/sca1b-1.crl]
+]]
+
+[6]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[7]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+]
+
+[8]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[9]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: *.p.rapidapi.com
+]
+
+[10]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 85 F5 E8 B7 AF 54 09   C5 30 E1 49 09 61 61 89  ......T..0.I.aa.
+0010: D9 F0 93 8B                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: AC 13 2A 1E 0B 5F 08 2C   D4 27 2D 11 82 57 64 2B  ..*.._.,.'-..Wd+
+0010: 8D 09 81 0D 43 07 34 AF   B0 98 82 6D C3 B2 7B 58  ....C.4....m...X
+0020: 86 E0 83 89 22 E2 7D C2   E8 B8 5E E5 E3 A7 85 4E  ....".....^....N
+0030: 00 91 45 6B 19 28 2C A6   30 DC 03 BF 7A FA A7 72  ..Ek.(,.0...z..r
+0040: A3 54 76 56 A7 C6 DE D3   B7 45 15 C4 AD C2 D7 95  .TvV.....E......
+0050: D7 A1 F0 11 02 E9 F9 0E   96 C4 7C E5 5C 15 79 02  ............\.y.
+0060: D7 5B AA 60 3F B9 23 ED   EE 23 1A 7E 77 98 BB 82  .[.`?.#..#..w...
+0070: 13 72 B4 C1 B6 32 6C 42   2F 0E F2 85 64 20 CF CE  .r...2lB/...d ..
+0080: D5 77 02 F9 B1 73 4A BC   57 43 2E 7F BE 9A D3 41  .w...sJ.WC.....A
+0090: 1C AD A0 64 4F 3C 43 26   E0 05 7A FD DC D2 02 5A  ...dO<C&..z....Z
+00A0: D2 54 C0 31 F0 4E A4 70   96 1D 68 35 3E 42 F3 0A  .T.1.N.p..h5>B..
+00B0: 74 81 B0 8B 80 19 44 09   87 50 11 BB D8 24 38 67  t.....D..P...$8g
+00C0: 8D 05 67 14 65 FE 65 5F   49 4D AE 9E DC 78 6D 20  ..g.e.e_IM...xm 
+00D0: 8C DC AC 70 78 EC E3 B7   D2 61 97 42 3E 14 45 CC  ...px....a.B>.E.
+00E0: E8 4D 60 10 F0 6B 10 49   0D BC 39 63 F4 AC 66 81  .M`..k.I..9c..f.
+00F0: C3 CE D0 D3 43 E2 29 3D   84 49 3C 25 33 C3 5A 25  ....C.)=.I<%3.Z%
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24528737555851895213919827617064808536856788789868126310716752303420041319710819680867697306230985630039655096548324364189962675576756038921107965025585889330528490649228935527969954506874750514159926943451238689552458142167021149788529783891257271028002485075630471793111207960868638365698705018555597520367289025831586046483446904825820575805338475813865444295353094097022678376192149453480223428943386514159000527368947588174705227657134217583008630047462959260157651883088072156905420231950318110240318878613016990846576820326568049365612395397183597930457965295993595011597251067348997341253617591444999389873893
+  public exponent: 65537
+  Validity: [From: Thu Oct 22 07:00:00 WIB 2015,
+               To: Sun Oct 19 07:00:00 WIB 2025]
+  Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+  SerialNumber: [    067f9457 8587e8ac 77deb253 325bbc99 8b560d]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootca1.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootca1.amazontrust.com/rootca1.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:0
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootca1.amazontrust.com/rootca1.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 85 92 BE 35 BB 79 CF A3   81 42 1C E4 E3 63 73 53  ...5.y...B...csS
+0010: 39 52 35 E7 D1 AD FD AE   99 8A AC 89 12 2F BB E7  9R5........../..
+0020: 6F 9A D5 4E 72 EA 20 30   61 F9 97 B2 CD A5 27 02  o..Nr. 0a.....'.
+0030: 45 A8 CA 76 3E 98 4A 83   9E B6 E6 45 E0 F2 43 F6  E..v>.J....E..C.
+0040: 08 DE 6D E8 6E DB 31 07   13 F0 2F 31 0D 93 6D 61  ..m.n.1.../1..ma
+0050: 37 7B 58 F0 FC 51 98 91   28 02 4F 05 76 B7 D3 F0  7.X..Q..(.O.v...
+0060: 1B C2 E6 5E D0 66 85 11   0F 2E 81 C6 10 81 29 FE  ...^.f........).
+0070: 20 60 48 F3 F2 F0 84 13   53 65 35 15 11 6B 82 51   `H.....Se5..k.Q
+0080: 40 55 57 5F 18 B5 B0 22   3E AD F2 5E A3 01 E3 C3  @UW_...">..^....
+0090: B3 F9 CB 41 5A E6 52 91   BB E4 36 87 4F 2D A9 A4  ...AZ.R...6.O-..
+00A0: 07 68 35 BA 94 72 CD 0E   EA 0E 7D 57 F2 79 FC 37  .h5..r.....W.y.7
+00B0: C5 7B 60 9E B2 EB C0 2D   90 77 0D 49 10 27 A5 38  ..`....-.w.I.'.8
+00C0: AD C4 12 A3 B4 A3 C8 48   B3 15 0B 1E E2 E2 19 DC  .......H........
+00D0: C4 76 52 C8 BC 8A 41 78   70 D9 6D 97 B3 4A 8B 78  .vR...Axp.m..J.x
+00E0: 2D 5E B4 0F A3 4C 60 CA   E1 47 CB 78 2D 12 17 B1  -^...L`..G.x-...
+00F0: 52 8B CA 39 2C BD B5 2F   C2 33 02 96 AB DA 94 7F  R..9,../.3......
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon Root CA 1, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22529839904807742196558773392430766620630713202204326167346456925862066285712069978308045976033918808540171076811098215136401323342247576789054764683787147408289170989302937775178809187827657352584557953877946352196797789035355954596527030584944622221752357105572088106020206921431118198373122638305846252087992561841631797199384157902018140720267433956687491591657652730221337591680012205319549572614035105482287002884850178224609018864719685310905426619874727796905080238179726224664042154200651710137931048812546957419686875805576245376866031854569863410951649630469236463991472642618512857920826701027482532358669
+  public exponent: 65537
+  Validity: [From: Mon May 25 19:00:00 WIB 2015,
+               To: Thu Dec 31 08:00:00 WIB 2037]
+  Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  SerialNumber: [    067f944a 2a27cdf3 fac2ae2b 01f908ee b9c4c6]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootg2.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootg2.amazontrust.com/rootg2.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootg2.amazontrust.com/rootg2.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 62 37 42 5C BC 10 B5 3E   8B 2C E9 0C 9B 6C 45 E2  b7B\...>.,...lE.
+0010: 07 00 7A F9 C5 58 0B B9   08 8C 3E ED B3 25 3C B5  ..z..X....>..%<.
+0020: 6F 50 E4 CD 35 6A A7 93   34 96 32 21 A9 48 44 AB  oP..5j..4.2!.HD.
+0030: 9C ED 3D B4 AA 73 6D E4   7F 16 80 89 6C CF 28 03  ..=..sm.....l.(.
+0040: 18 83 47 79 A3 10 7E 30   5B AC 3B B0 60 E0 77 D4  ..Gy...0[.;.`.w.
+0050: 08 A6 E1 1D 7C 5E C0 BB   F9 9A 7B 22 9D A7 00 09  .....^....."....
+0060: 7E AC 46 17 83 DC 9C 26   57 99 30 39 62 96 8F ED  ..F....&W.09b...
+0070: DA DE AA C5 CC 1B 3E CA   43 68 6C 57 16 BC D5 0E  ......>.ChlW....
+0080: 20 2E FE FF C2 6A 5D 2E   A0 4A 6D 14 58 87 94 E6   ....j]..Jm.X...
+0090: 39 31 5F 7C 73 CB 90 88   6A 84 11 96 27 A6 ED D9  91_.s...j...'...
+00A0: 81 46 A6 7E A3 72 00 0A   52 3E 83 88 07 63 77 89  .F...r..R>...cw.
+00B0: 69 17 0F 39 85 D2 AB 08   45 4D D0 51 3A FD 5D 5D  i..9....EM.Q:.]]
+00C0: 37 64 4C 7E 30 B2 55 24   42 9D 36 B0 5D 9C 17 81  7dL.0.U$B.6.]...
+00D0: 61 F1 CA F9 10 02 24 AB   EB 0D 74 91 8D 7B 45 29  a.....$...t...E)
+00E0: 50 39 88 B2 A6 89 35 25   1E 14 6A 47 23 31 2F 5C  P9....5%..jG#1/\
+00F0: 9A FA AD 9A 0E 62 51 A4   2A A9 C4 F9 34 9D 21 18  .....bQ.*...4.!.
+
+], [
+[
+  Version: V3
+  Subject: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26894789576491863019171445242018370132029525033879210664513024255165308689836081694724912552986436241602345929261854187816625921774943728567119070351838976265193901442169339571326613928339955106648223197498035701437846440970934704192382084561469274550003268570741310868032789070264835003681318445644941362885752628282968349509706358865971392279088395067847314610178969555804359319567178098112935181143559364150874524817692694181296058297355335204675211145990489303168553611700020424738364579606192390834705213026692659672388567853246354560726855054573503174641583891075106464210711468427779853334564691648681991700229
+  public exponent: 65537
+  Validity: [From: Wed Sep 02 07:00:00 WIB 2009,
+               To: Thu Jun 29 00:39:16 WIB 2034]
+  Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+  SerialNumber: [    a70e4a4c 3482b77f]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://o.ss2.us/
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://x.ss2.us/x.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: BF 5F B7 D1 CE DD 1F 86   F4 5B 55 AC DC D7 10 C2  ._.......[U.....
+0010: 0E A9 88 E7                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://s.ss2.us/r.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 23 1D E3 8A 57 CA 7D E9   17 79 4C F1 1E 55 FD CC  #...W....yL..U..
+0010: 53 6E 3E 47 0F DF C6 55   F2 B2 04 36 ED 80 1F 53  Sn>G...U...6...S
+0020: C4 5D 34 28 6B BE C7 55   FC 67 EA CB 3F 7F 90 B2  .]4(k..U.g..?...
+0030: 33 CD 1B 58 10 82 02 F8   F8 2F F5 13 60 D4 05 CE  3..X...../..`...
+0040: F1 81 08 C1 DD A7 75 97   4F 18 B9 6D DE F7 93 91  ......u.O..m....
+0050: 08 BA 7E 40 2C ED C1 EA   BB 76 9E 33 06 77 1D 0D  ...@,....v.3.w..
+0060: 08 7F 53 DD 1B 64 AB 82   27 F1 69 D5 4D 5E AE F4  ..S..d..'.i.M^..
+0070: A1 C3 75 A7 58 44 2D F2   3C 70 98 AC BA 69 B6 95  ..u.XD-.<p...i..
+0080: 77 7F 0F 31 5E 2C FC A0   87 3A 47 69 F0 79 5F F4  w..1^,...:Gi.y_.
+0090: 14 54 A4 95 5E 11 78 12   60 27 CE 9F C2 77 FF 23  .T..^.x.`'...w.#
+00A0: 53 77 5D BA FF EA 59 E7   DB CF AF 92 96 EF 24 9A  Sw]...Y.......$.
+00B0: 35 10 7A 9C 91 C6 0E 7D   99 F6 3F 19 DF F5 72 54  5.z.......?...rT
+00C0: E1 15 A9 07 59 7B 83 BF   52 2E 46 8C B2 00 64 76  ....Y...R.F...dv
+00D0: 1C 48 D3 D8 79 E8 6E 56   CC AE 2C 03 90 D7 19 38  .H..y.nV..,....8
+00E0: 99 E4 CA 09 19 5B FF 07   96 B0 A8 7F 34 49 DF 56  .....[......4I.V
+00F0: A9 F7 B0 5F ED 33 ED 8C   47 B7 30 03 5D F4 03 8C  ..._.3..G.0.]...
+
+]] authType: ECDHE_RSA
+2022-10-05 18:40:45,871 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@5ac8adc5
+2022-10-05 18:42:51,126 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] Initialising httpUtil with default configuration ignoreCertificate: true
+2022-10-05 18:42:51,130 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] configureToIgnoreCertificate Builder: okhttp3.OkHttpClient$Builder@59e4c7cd
+2022-10-05 18:42:51,141 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@59e4c7cd
+2022-10-05 18:42:58,824 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] checkServerTrusted chain: [[
+[
+  Version: V3
+  Subject: CN=*.p.rapidapi.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21154787475477487457715228792401611764400760598600972467903271839980418181232632547580009664516493042174658953311808910227447726603326973464150198068644289665727567272120035473742606438108203027313688472451388541830990354978600662453350723336884643935059455328067042422795096193079608340769232138963503352947031679916511763704883825327896337908628842693118409494130638711237879345751026794080037135895226473376747867380942840945943607622024439397804498499368094958287747344842289575638619181632543456025309093343086602589107393117317314598062494663312472476430803406516011573090592170575057248793094431177797799011637
+  public exponent: 65537
+  Validity: [From: Fri Jul 08 07:00:00 WIB 2022,
+               To: Mon Aug 07 06:59:59 WIB 2023]
+  Issuer: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  SerialNumber: [    0dc46029 b68dca56 71a43222 516e0d86]
+
+Certificate Extensions: 10
+[1]: ObjectId: 1.3.6.1.4.1.11129.2.4.2 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 82 01 6D 04 82 01 69   01 67 00 76 00 E8 3E D0  ...m...i.g.v..>.
+0010: DA 3E F5 06 35 32 E7 57   28 BC 89 6B C9 03 D3 CB  .>..52.W(..k....
+0020: D1 11 6B EC EB 69 E1 77   7D 6D 06 BD 6E 00 00 01  ..k..i.w.m..n...
+0030: 81 DB 35 E1 EA 00 00 04   03 00 47 30 45 02 20 61  ..5.......G0E. a
+0040: 97 06 E4 6B F7 03 4F 7D   2C 63 B4 6C 33 E2 3D B8  ...k..O.,c.l3.=.
+0050: 69 7A 2D 11 62 EF 6B 1B   B6 FF AB A8 2A 4A 24 02  iz-.b.k.....*J$.
+0060: 21 00 D3 02 86 27 82 05   A5 9E E9 1D F3 E6 4B 4F  !....'........KO
+0070: 22 FA 8E 4B D9 C7 84 30   87 26 3B 41 EF B5 85 F3  "..K...0.&;A....
+0080: 18 06 00 76 00 35 CF 19   1B BF B1 6C 57 BF 0F AD  ...v.5.....lW...
+0090: 4C 6D 42 CB BB B6 27 20   26 51 EA 3F E1 2A EF A8  LmB...' &Q.?.*..
+00A0: 03 C3 3B D6 4C 00 00 01   81 DB 35 E1 42 00 00 04  ..;.L.....5.B...
+00B0: 03 00 47 30 45 02 21 00   CC EA 32 C4 A6 99 B5 F9  ..G0E.!...2.....
+00C0: 16 D3 B8 BB 21 27 69 83   D2 2B 5D A5 26 64 5E 25  ....!'i..+].&d^%
+00D0: 73 CD 2A 12 3D F3 CD 4F   02 20 23 F2 27 FD 55 99  s.*.=..O. #.'.U.
+00E0: 83 C5 01 3C 34 D9 C3 64   C3 1B 20 C4 80 26 CD 2F  ...<4..d.. ..&./
+00F0: 1D 57 62 69 D5 FA C7 EA   7C 7A 00 75 00 B3 73 77  .Wbi.....z.u..sw
+0100: 07 E1 84 50 F8 63 86 D6   05 A9 DC 11 09 4A 79 2D  ...P.c.......Jy-
+0110: B1 67 0C 0B 87 DC F0 03   0E 79 36 A5 9A 00 00 01  .g.......y6.....
+0120: 81 DB 35 E1 80 00 00 04   03 00 46 30 44 02 20 54  ..5.......F0D. T
+0130: 4C C3 3A 62 67 6E 67 F0   4D C3 C6 F3 1E A3 16 59  L.:bgng.M......Y
+0140: E6 C9 47 15 03 05 EA 43   34 3E 51 2E 01 C4 32 02  ..G....C4>Q...2.
+0150: 20 62 17 37 5B 82 CB 97   D4 05 28 42 2B DB 9E 50   b.7[.....(B+..P
+0160: F4 C7 BC 01 D1 66 9B F7   63 76 DE 38 B2 EF A8 0C  .....f..cv.8....
+0170: 19                                                 .
+
+
+[2]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.sca1b.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.sca1b.amazontrust.com/sca1b.crt
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+[4]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:false
+  PathLen: undefined
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.sca1b.amazontrust.com/sca1b-1.crl]
+]]
+
+[6]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[7]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+]
+
+[8]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[9]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: *.p.rapidapi.com
+]
+
+[10]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 85 F5 E8 B7 AF 54 09   C5 30 E1 49 09 61 61 89  ......T..0.I.aa.
+0010: D9 F0 93 8B                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: AC 13 2A 1E 0B 5F 08 2C   D4 27 2D 11 82 57 64 2B  ..*.._.,.'-..Wd+
+0010: 8D 09 81 0D 43 07 34 AF   B0 98 82 6D C3 B2 7B 58  ....C.4....m...X
+0020: 86 E0 83 89 22 E2 7D C2   E8 B8 5E E5 E3 A7 85 4E  ....".....^....N
+0030: 00 91 45 6B 19 28 2C A6   30 DC 03 BF 7A FA A7 72  ..Ek.(,.0...z..r
+0040: A3 54 76 56 A7 C6 DE D3   B7 45 15 C4 AD C2 D7 95  .TvV.....E......
+0050: D7 A1 F0 11 02 E9 F9 0E   96 C4 7C E5 5C 15 79 02  ............\.y.
+0060: D7 5B AA 60 3F B9 23 ED   EE 23 1A 7E 77 98 BB 82  .[.`?.#..#..w...
+0070: 13 72 B4 C1 B6 32 6C 42   2F 0E F2 85 64 20 CF CE  .r...2lB/...d ..
+0080: D5 77 02 F9 B1 73 4A BC   57 43 2E 7F BE 9A D3 41  .w...sJ.WC.....A
+0090: 1C AD A0 64 4F 3C 43 26   E0 05 7A FD DC D2 02 5A  ...dO<C&..z....Z
+00A0: D2 54 C0 31 F0 4E A4 70   96 1D 68 35 3E 42 F3 0A  .T.1.N.p..h5>B..
+00B0: 74 81 B0 8B 80 19 44 09   87 50 11 BB D8 24 38 67  t.....D..P...$8g
+00C0: 8D 05 67 14 65 FE 65 5F   49 4D AE 9E DC 78 6D 20  ..g.e.e_IM...xm 
+00D0: 8C DC AC 70 78 EC E3 B7   D2 61 97 42 3E 14 45 CC  ...px....a.B>.E.
+00E0: E8 4D 60 10 F0 6B 10 49   0D BC 39 63 F4 AC 66 81  .M`..k.I..9c..f.
+00F0: C3 CE D0 D3 43 E2 29 3D   84 49 3C 25 33 C3 5A 25  ....C.)=.I<%3.Z%
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24528737555851895213919827617064808536856788789868126310716752303420041319710819680867697306230985630039655096548324364189962675576756038921107965025585889330528490649228935527969954506874750514159926943451238689552458142167021149788529783891257271028002485075630471793111207960868638365698705018555597520367289025831586046483446904825820575805338475813865444295353094097022678376192149453480223428943386514159000527368947588174705227657134217583008630047462959260157651883088072156905420231950318110240318878613016990846576820326568049365612395397183597930457965295993595011597251067348997341253617591444999389873893
+  public exponent: 65537
+  Validity: [From: Thu Oct 22 07:00:00 WIB 2015,
+               To: Sun Oct 19 07:00:00 WIB 2025]
+  Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+  SerialNumber: [    067f9457 8587e8ac 77deb253 325bbc99 8b560d]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootca1.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootca1.amazontrust.com/rootca1.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:0
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootca1.amazontrust.com/rootca1.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 85 92 BE 35 BB 79 CF A3   81 42 1C E4 E3 63 73 53  ...5.y...B...csS
+0010: 39 52 35 E7 D1 AD FD AE   99 8A AC 89 12 2F BB E7  9R5........../..
+0020: 6F 9A D5 4E 72 EA 20 30   61 F9 97 B2 CD A5 27 02  o..Nr. 0a.....'.
+0030: 45 A8 CA 76 3E 98 4A 83   9E B6 E6 45 E0 F2 43 F6  E..v>.J....E..C.
+0040: 08 DE 6D E8 6E DB 31 07   13 F0 2F 31 0D 93 6D 61  ..m.n.1.../1..ma
+0050: 37 7B 58 F0 FC 51 98 91   28 02 4F 05 76 B7 D3 F0  7.X..Q..(.O.v...
+0060: 1B C2 E6 5E D0 66 85 11   0F 2E 81 C6 10 81 29 FE  ...^.f........).
+0070: 20 60 48 F3 F2 F0 84 13   53 65 35 15 11 6B 82 51   `H.....Se5..k.Q
+0080: 40 55 57 5F 18 B5 B0 22   3E AD F2 5E A3 01 E3 C3  @UW_...">..^....
+0090: B3 F9 CB 41 5A E6 52 91   BB E4 36 87 4F 2D A9 A4  ...AZ.R...6.O-..
+00A0: 07 68 35 BA 94 72 CD 0E   EA 0E 7D 57 F2 79 FC 37  .h5..r.....W.y.7
+00B0: C5 7B 60 9E B2 EB C0 2D   90 77 0D 49 10 27 A5 38  ..`....-.w.I.'.8
+00C0: AD C4 12 A3 B4 A3 C8 48   B3 15 0B 1E E2 E2 19 DC  .......H........
+00D0: C4 76 52 C8 BC 8A 41 78   70 D9 6D 97 B3 4A 8B 78  .vR...Axp.m..J.x
+00E0: 2D 5E B4 0F A3 4C 60 CA   E1 47 CB 78 2D 12 17 B1  -^...L`..G.x-...
+00F0: 52 8B CA 39 2C BD B5 2F   C2 33 02 96 AB DA 94 7F  R..9,../.3......
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon Root CA 1, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22529839904807742196558773392430766620630713202204326167346456925862066285712069978308045976033918808540171076811098215136401323342247576789054764683787147408289170989302937775178809187827657352584557953877946352196797789035355954596527030584944622221752357105572088106020206921431118198373122638305846252087992561841631797199384157902018140720267433956687491591657652730221337591680012205319549572614035105482287002884850178224609018864719685310905426619874727796905080238179726224664042154200651710137931048812546957419686875805576245376866031854569863410951649630469236463991472642618512857920826701027482532358669
+  public exponent: 65537
+  Validity: [From: Mon May 25 19:00:00 WIB 2015,
+               To: Thu Dec 31 08:00:00 WIB 2037]
+  Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  SerialNumber: [    067f944a 2a27cdf3 fac2ae2b 01f908ee b9c4c6]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootg2.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootg2.amazontrust.com/rootg2.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootg2.amazontrust.com/rootg2.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 62 37 42 5C BC 10 B5 3E   8B 2C E9 0C 9B 6C 45 E2  b7B\...>.,...lE.
+0010: 07 00 7A F9 C5 58 0B B9   08 8C 3E ED B3 25 3C B5  ..z..X....>..%<.
+0020: 6F 50 E4 CD 35 6A A7 93   34 96 32 21 A9 48 44 AB  oP..5j..4.2!.HD.
+0030: 9C ED 3D B4 AA 73 6D E4   7F 16 80 89 6C CF 28 03  ..=..sm.....l.(.
+0040: 18 83 47 79 A3 10 7E 30   5B AC 3B B0 60 E0 77 D4  ..Gy...0[.;.`.w.
+0050: 08 A6 E1 1D 7C 5E C0 BB   F9 9A 7B 22 9D A7 00 09  .....^....."....
+0060: 7E AC 46 17 83 DC 9C 26   57 99 30 39 62 96 8F ED  ..F....&W.09b...
+0070: DA DE AA C5 CC 1B 3E CA   43 68 6C 57 16 BC D5 0E  ......>.ChlW....
+0080: 20 2E FE FF C2 6A 5D 2E   A0 4A 6D 14 58 87 94 E6   ....j]..Jm.X...
+0090: 39 31 5F 7C 73 CB 90 88   6A 84 11 96 27 A6 ED D9  91_.s...j...'...
+00A0: 81 46 A6 7E A3 72 00 0A   52 3E 83 88 07 63 77 89  .F...r..R>...cw.
+00B0: 69 17 0F 39 85 D2 AB 08   45 4D D0 51 3A FD 5D 5D  i..9....EM.Q:.]]
+00C0: 37 64 4C 7E 30 B2 55 24   42 9D 36 B0 5D 9C 17 81  7dL.0.U$B.6.]...
+00D0: 61 F1 CA F9 10 02 24 AB   EB 0D 74 91 8D 7B 45 29  a.....$...t...E)
+00E0: 50 39 88 B2 A6 89 35 25   1E 14 6A 47 23 31 2F 5C  P9....5%..jG#1/\
+00F0: 9A FA AD 9A 0E 62 51 A4   2A A9 C4 F9 34 9D 21 18  .....bQ.*...4.!.
+
+], [
+[
+  Version: V3
+  Subject: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26894789576491863019171445242018370132029525033879210664513024255165308689836081694724912552986436241602345929261854187816625921774943728567119070351838976265193901442169339571326613928339955106648223197498035701437846440970934704192382084561469274550003268570741310868032789070264835003681318445644941362885752628282968349509706358865971392279088395067847314610178969555804359319567178098112935181143559364150874524817692694181296058297355335204675211145990489303168553611700020424738364579606192390834705213026692659672388567853246354560726855054573503174641583891075106464210711468427779853334564691648681991700229
+  public exponent: 65537
+  Validity: [From: Wed Sep 02 07:00:00 WIB 2009,
+               To: Thu Jun 29 00:39:16 WIB 2034]
+  Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+  SerialNumber: [    a70e4a4c 3482b77f]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://o.ss2.us/
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://x.ss2.us/x.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: BF 5F B7 D1 CE DD 1F 86   F4 5B 55 AC DC D7 10 C2  ._.......[U.....
+0010: 0E A9 88 E7                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://s.ss2.us/r.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 23 1D E3 8A 57 CA 7D E9   17 79 4C F1 1E 55 FD CC  #...W....yL..U..
+0010: 53 6E 3E 47 0F DF C6 55   F2 B2 04 36 ED 80 1F 53  Sn>G...U...6...S
+0020: C4 5D 34 28 6B BE C7 55   FC 67 EA CB 3F 7F 90 B2  .]4(k..U.g..?...
+0030: 33 CD 1B 58 10 82 02 F8   F8 2F F5 13 60 D4 05 CE  3..X...../..`...
+0040: F1 81 08 C1 DD A7 75 97   4F 18 B9 6D DE F7 93 91  ......u.O..m....
+0050: 08 BA 7E 40 2C ED C1 EA   BB 76 9E 33 06 77 1D 0D  ...@,....v.3.w..
+0060: 08 7F 53 DD 1B 64 AB 82   27 F1 69 D5 4D 5E AE F4  ..S..d..'.i.M^..
+0070: A1 C3 75 A7 58 44 2D F2   3C 70 98 AC BA 69 B6 95  ..u.XD-.<p...i..
+0080: 77 7F 0F 31 5E 2C FC A0   87 3A 47 69 F0 79 5F F4  w..1^,...:Gi.y_.
+0090: 14 54 A4 95 5E 11 78 12   60 27 CE 9F C2 77 FF 23  .T..^.x.`'...w.#
+00A0: 53 77 5D BA FF EA 59 E7   DB CF AF 92 96 EF 24 9A  Sw]...Y.......$.
+00B0: 35 10 7A 9C 91 C6 0E 7D   99 F6 3F 19 DF F5 72 54  5.z.......?...rT
+00C0: E1 15 A9 07 59 7B 83 BF   52 2E 46 8C B2 00 64 76  ....Y...R.F...dv
+00D0: 1C 48 D3 D8 79 E8 6E 56   CC AE 2C 03 90 D7 19 38  .H..y.nV..,....8
+00E0: 99 E4 CA 09 19 5B FF 07   96 B0 A8 7F 34 49 DF 56  .....[......4I.V
+00F0: A9 F7 B0 5F ED 33 ED 8C   47 B7 30 03 5D F4 03 8C  ..._.3..G.0.]...
+
+]] authType: ECDHE_RSA
+2022-10-05 18:43:00,881 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@59e4c7cd
+2022-10-05 18:46:26,584 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] Initialising httpUtil with default configuration ignoreCertificate: true
+2022-10-05 18:46:26,589 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-2] configureToIgnoreCertificate Builder: okhttp3.OkHttpClient$Builder@472f3df0
+2022-10-05 18:46:26,596 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@472f3df0
+2022-10-05 18:46:26,785 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] checkServerTrusted chain: [[
+[
+  Version: V3
+  Subject: CN=*.p.rapidapi.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21154787475477487457715228792401611764400760598600972467903271839980418181232632547580009664516493042174658953311808910227447726603326973464150198068644289665727567272120035473742606438108203027313688472451388541830990354978600662453350723336884643935059455328067042422795096193079608340769232138963503352947031679916511763704883825327896337908628842693118409494130638711237879345751026794080037135895226473376747867380942840945943607622024439397804498499368094958287747344842289575638619181632543456025309093343086602589107393117317314598062494663312472476430803406516011573090592170575057248793094431177797799011637
+  public exponent: 65537
+  Validity: [From: Fri Jul 08 07:00:00 WIB 2022,
+               To: Mon Aug 07 06:59:59 WIB 2023]
+  Issuer: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  SerialNumber: [    0dc46029 b68dca56 71a43222 516e0d86]
+
+Certificate Extensions: 10
+[1]: ObjectId: 1.3.6.1.4.1.11129.2.4.2 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 82 01 6D 04 82 01 69   01 67 00 76 00 E8 3E D0  ...m...i.g.v..>.
+0010: DA 3E F5 06 35 32 E7 57   28 BC 89 6B C9 03 D3 CB  .>..52.W(..k....
+0020: D1 11 6B EC EB 69 E1 77   7D 6D 06 BD 6E 00 00 01  ..k..i.w.m..n...
+0030: 81 DB 35 E1 EA 00 00 04   03 00 47 30 45 02 20 61  ..5.......G0E. a
+0040: 97 06 E4 6B F7 03 4F 7D   2C 63 B4 6C 33 E2 3D B8  ...k..O.,c.l3.=.
+0050: 69 7A 2D 11 62 EF 6B 1B   B6 FF AB A8 2A 4A 24 02  iz-.b.k.....*J$.
+0060: 21 00 D3 02 86 27 82 05   A5 9E E9 1D F3 E6 4B 4F  !....'........KO
+0070: 22 FA 8E 4B D9 C7 84 30   87 26 3B 41 EF B5 85 F3  "..K...0.&;A....
+0080: 18 06 00 76 00 35 CF 19   1B BF B1 6C 57 BF 0F AD  ...v.5.....lW...
+0090: 4C 6D 42 CB BB B6 27 20   26 51 EA 3F E1 2A EF A8  LmB...' &Q.?.*..
+00A0: 03 C3 3B D6 4C 00 00 01   81 DB 35 E1 42 00 00 04  ..;.L.....5.B...
+00B0: 03 00 47 30 45 02 21 00   CC EA 32 C4 A6 99 B5 F9  ..G0E.!...2.....
+00C0: 16 D3 B8 BB 21 27 69 83   D2 2B 5D A5 26 64 5E 25  ....!'i..+].&d^%
+00D0: 73 CD 2A 12 3D F3 CD 4F   02 20 23 F2 27 FD 55 99  s.*.=..O. #.'.U.
+00E0: 83 C5 01 3C 34 D9 C3 64   C3 1B 20 C4 80 26 CD 2F  ...<4..d.. ..&./
+00F0: 1D 57 62 69 D5 FA C7 EA   7C 7A 00 75 00 B3 73 77  .Wbi.....z.u..sw
+0100: 07 E1 84 50 F8 63 86 D6   05 A9 DC 11 09 4A 79 2D  ...P.c.......Jy-
+0110: B1 67 0C 0B 87 DC F0 03   0E 79 36 A5 9A 00 00 01  .g.......y6.....
+0120: 81 DB 35 E1 80 00 00 04   03 00 46 30 44 02 20 54  ..5.......F0D. T
+0130: 4C C3 3A 62 67 6E 67 F0   4D C3 C6 F3 1E A3 16 59  L.:bgng.M......Y
+0140: E6 C9 47 15 03 05 EA 43   34 3E 51 2E 01 C4 32 02  ..G....C4>Q...2.
+0150: 20 62 17 37 5B 82 CB 97   D4 05 28 42 2B DB 9E 50   b.7[.....(B+..P
+0160: F4 C7 BC 01 D1 66 9B F7   63 76 DE 38 B2 EF A8 0C  .....f..cv.8....
+0170: 19                                                 .
+
+
+[2]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.sca1b.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.sca1b.amazontrust.com/sca1b.crt
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+[4]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:false
+  PathLen: undefined
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.sca1b.amazontrust.com/sca1b-1.crl]
+]]
+
+[6]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[7]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+]
+
+[8]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[9]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: *.p.rapidapi.com
+]
+
+[10]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 85 F5 E8 B7 AF 54 09   C5 30 E1 49 09 61 61 89  ......T..0.I.aa.
+0010: D9 F0 93 8B                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: AC 13 2A 1E 0B 5F 08 2C   D4 27 2D 11 82 57 64 2B  ..*.._.,.'-..Wd+
+0010: 8D 09 81 0D 43 07 34 AF   B0 98 82 6D C3 B2 7B 58  ....C.4....m...X
+0020: 86 E0 83 89 22 E2 7D C2   E8 B8 5E E5 E3 A7 85 4E  ....".....^....N
+0030: 00 91 45 6B 19 28 2C A6   30 DC 03 BF 7A FA A7 72  ..Ek.(,.0...z..r
+0040: A3 54 76 56 A7 C6 DE D3   B7 45 15 C4 AD C2 D7 95  .TvV.....E......
+0050: D7 A1 F0 11 02 E9 F9 0E   96 C4 7C E5 5C 15 79 02  ............\.y.
+0060: D7 5B AA 60 3F B9 23 ED   EE 23 1A 7E 77 98 BB 82  .[.`?.#..#..w...
+0070: 13 72 B4 C1 B6 32 6C 42   2F 0E F2 85 64 20 CF CE  .r...2lB/...d ..
+0080: D5 77 02 F9 B1 73 4A BC   57 43 2E 7F BE 9A D3 41  .w...sJ.WC.....A
+0090: 1C AD A0 64 4F 3C 43 26   E0 05 7A FD DC D2 02 5A  ...dO<C&..z....Z
+00A0: D2 54 C0 31 F0 4E A4 70   96 1D 68 35 3E 42 F3 0A  .T.1.N.p..h5>B..
+00B0: 74 81 B0 8B 80 19 44 09   87 50 11 BB D8 24 38 67  t.....D..P...$8g
+00C0: 8D 05 67 14 65 FE 65 5F   49 4D AE 9E DC 78 6D 20  ..g.e.e_IM...xm 
+00D0: 8C DC AC 70 78 EC E3 B7   D2 61 97 42 3E 14 45 CC  ...px....a.B>.E.
+00E0: E8 4D 60 10 F0 6B 10 49   0D BC 39 63 F4 AC 66 81  .M`..k.I..9c..f.
+00F0: C3 CE D0 D3 43 E2 29 3D   84 49 3C 25 33 C3 5A 25  ....C.)=.I<%3.Z%
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24528737555851895213919827617064808536856788789868126310716752303420041319710819680867697306230985630039655096548324364189962675576756038921107965025585889330528490649228935527969954506874750514159926943451238689552458142167021149788529783891257271028002485075630471793111207960868638365698705018555597520367289025831586046483446904825820575805338475813865444295353094097022678376192149453480223428943386514159000527368947588174705227657134217583008630047462959260157651883088072156905420231950318110240318878613016990846576820326568049365612395397183597930457965295993595011597251067348997341253617591444999389873893
+  public exponent: 65537
+  Validity: [From: Thu Oct 22 07:00:00 WIB 2015,
+               To: Sun Oct 19 07:00:00 WIB 2025]
+  Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+  SerialNumber: [    067f9457 8587e8ac 77deb253 325bbc99 8b560d]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootca1.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootca1.amazontrust.com/rootca1.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:0
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootca1.amazontrust.com/rootca1.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 85 92 BE 35 BB 79 CF A3   81 42 1C E4 E3 63 73 53  ...5.y...B...csS
+0010: 39 52 35 E7 D1 AD FD AE   99 8A AC 89 12 2F BB E7  9R5........../..
+0020: 6F 9A D5 4E 72 EA 20 30   61 F9 97 B2 CD A5 27 02  o..Nr. 0a.....'.
+0030: 45 A8 CA 76 3E 98 4A 83   9E B6 E6 45 E0 F2 43 F6  E..v>.J....E..C.
+0040: 08 DE 6D E8 6E DB 31 07   13 F0 2F 31 0D 93 6D 61  ..m.n.1.../1..ma
+0050: 37 7B 58 F0 FC 51 98 91   28 02 4F 05 76 B7 D3 F0  7.X..Q..(.O.v...
+0060: 1B C2 E6 5E D0 66 85 11   0F 2E 81 C6 10 81 29 FE  ...^.f........).
+0070: 20 60 48 F3 F2 F0 84 13   53 65 35 15 11 6B 82 51   `H.....Se5..k.Q
+0080: 40 55 57 5F 18 B5 B0 22   3E AD F2 5E A3 01 E3 C3  @UW_...">..^....
+0090: B3 F9 CB 41 5A E6 52 91   BB E4 36 87 4F 2D A9 A4  ...AZ.R...6.O-..
+00A0: 07 68 35 BA 94 72 CD 0E   EA 0E 7D 57 F2 79 FC 37  .h5..r.....W.y.7
+00B0: C5 7B 60 9E B2 EB C0 2D   90 77 0D 49 10 27 A5 38  ..`....-.w.I.'.8
+00C0: AD C4 12 A3 B4 A3 C8 48   B3 15 0B 1E E2 E2 19 DC  .......H........
+00D0: C4 76 52 C8 BC 8A 41 78   70 D9 6D 97 B3 4A 8B 78  .vR...Axp.m..J.x
+00E0: 2D 5E B4 0F A3 4C 60 CA   E1 47 CB 78 2D 12 17 B1  -^...L`..G.x-...
+00F0: 52 8B CA 39 2C BD B5 2F   C2 33 02 96 AB DA 94 7F  R..9,../.3......
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon Root CA 1, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22529839904807742196558773392430766620630713202204326167346456925862066285712069978308045976033918808540171076811098215136401323342247576789054764683787147408289170989302937775178809187827657352584557953877946352196797789035355954596527030584944622221752357105572088106020206921431118198373122638305846252087992561841631797199384157902018140720267433956687491591657652730221337591680012205319549572614035105482287002884850178224609018864719685310905426619874727796905080238179726224664042154200651710137931048812546957419686875805576245376866031854569863410951649630469236463991472642618512857920826701027482532358669
+  public exponent: 65537
+  Validity: [From: Mon May 25 19:00:00 WIB 2015,
+               To: Thu Dec 31 08:00:00 WIB 2037]
+  Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  SerialNumber: [    067f944a 2a27cdf3 fac2ae2b 01f908ee b9c4c6]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootg2.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootg2.amazontrust.com/rootg2.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootg2.amazontrust.com/rootg2.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 62 37 42 5C BC 10 B5 3E   8B 2C E9 0C 9B 6C 45 E2  b7B\...>.,...lE.
+0010: 07 00 7A F9 C5 58 0B B9   08 8C 3E ED B3 25 3C B5  ..z..X....>..%<.
+0020: 6F 50 E4 CD 35 6A A7 93   34 96 32 21 A9 48 44 AB  oP..5j..4.2!.HD.
+0030: 9C ED 3D B4 AA 73 6D E4   7F 16 80 89 6C CF 28 03  ..=..sm.....l.(.
+0040: 18 83 47 79 A3 10 7E 30   5B AC 3B B0 60 E0 77 D4  ..Gy...0[.;.`.w.
+0050: 08 A6 E1 1D 7C 5E C0 BB   F9 9A 7B 22 9D A7 00 09  .....^....."....
+0060: 7E AC 46 17 83 DC 9C 26   57 99 30 39 62 96 8F ED  ..F....&W.09b...
+0070: DA DE AA C5 CC 1B 3E CA   43 68 6C 57 16 BC D5 0E  ......>.ChlW....
+0080: 20 2E FE FF C2 6A 5D 2E   A0 4A 6D 14 58 87 94 E6   ....j]..Jm.X...
+0090: 39 31 5F 7C 73 CB 90 88   6A 84 11 96 27 A6 ED D9  91_.s...j...'...
+00A0: 81 46 A6 7E A3 72 00 0A   52 3E 83 88 07 63 77 89  .F...r..R>...cw.
+00B0: 69 17 0F 39 85 D2 AB 08   45 4D D0 51 3A FD 5D 5D  i..9....EM.Q:.]]
+00C0: 37 64 4C 7E 30 B2 55 24   42 9D 36 B0 5D 9C 17 81  7dL.0.U$B.6.]...
+00D0: 61 F1 CA F9 10 02 24 AB   EB 0D 74 91 8D 7B 45 29  a.....$...t...E)
+00E0: 50 39 88 B2 A6 89 35 25   1E 14 6A 47 23 31 2F 5C  P9....5%..jG#1/\
+00F0: 9A FA AD 9A 0E 62 51 A4   2A A9 C4 F9 34 9D 21 18  .....bQ.*...4.!.
+
+], [
+[
+  Version: V3
+  Subject: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26894789576491863019171445242018370132029525033879210664513024255165308689836081694724912552986436241602345929261854187816625921774943728567119070351838976265193901442169339571326613928339955106648223197498035701437846440970934704192382084561469274550003268570741310868032789070264835003681318445644941362885752628282968349509706358865971392279088395067847314610178969555804359319567178098112935181143559364150874524817692694181296058297355335204675211145990489303168553611700020424738364579606192390834705213026692659672388567853246354560726855054573503174641583891075106464210711468427779853334564691648681991700229
+  public exponent: 65537
+  Validity: [From: Wed Sep 02 07:00:00 WIB 2009,
+               To: Thu Jun 29 00:39:16 WIB 2034]
+  Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+  SerialNumber: [    a70e4a4c 3482b77f]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://o.ss2.us/
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://x.ss2.us/x.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: BF 5F B7 D1 CE DD 1F 86   F4 5B 55 AC DC D7 10 C2  ._.......[U.....
+0010: 0E A9 88 E7                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://s.ss2.us/r.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 23 1D E3 8A 57 CA 7D E9   17 79 4C F1 1E 55 FD CC  #...W....yL..U..
+0010: 53 6E 3E 47 0F DF C6 55   F2 B2 04 36 ED 80 1F 53  Sn>G...U...6...S
+0020: C4 5D 34 28 6B BE C7 55   FC 67 EA CB 3F 7F 90 B2  .]4(k..U.g..?...
+0030: 33 CD 1B 58 10 82 02 F8   F8 2F F5 13 60 D4 05 CE  3..X...../..`...
+0040: F1 81 08 C1 DD A7 75 97   4F 18 B9 6D DE F7 93 91  ......u.O..m....
+0050: 08 BA 7E 40 2C ED C1 EA   BB 76 9E 33 06 77 1D 0D  ...@,....v.3.w..
+0060: 08 7F 53 DD 1B 64 AB 82   27 F1 69 D5 4D 5E AE F4  ..S..d..'.i.M^..
+0070: A1 C3 75 A7 58 44 2D F2   3C 70 98 AC BA 69 B6 95  ..u.XD-.<p...i..
+0080: 77 7F 0F 31 5E 2C FC A0   87 3A 47 69 F0 79 5F F4  w..1^,...:Gi.y_.
+0090: 14 54 A4 95 5E 11 78 12   60 27 CE 9F C2 77 FF 23  .T..^.x.`'...w.#
+00A0: 53 77 5D BA FF EA 59 E7   DB CF AF 92 96 EF 24 9A  Sw]...Y.......$.
+00B0: 35 10 7A 9C 91 C6 0E 7D   99 F6 3F 19 DF F5 72 54  5.z.......?...rT
+00C0: E1 15 A9 07 59 7B 83 BF   52 2E 46 8C B2 00 64 76  ....Y...R.F...dv
+00D0: 1C 48 D3 D8 79 E8 6E 56   CC AE 2C 03 90 D7 19 38  .H..y.nV..,....8
+00E0: 99 E4 CA 09 19 5B FF 07   96 B0 A8 7F 34 49 DF 56  .....[......4I.V
+00F0: A9 F7 B0 5F ED 33 ED 8C   47 B7 30 03 5D F4 03 8C  ..._.3..G.0.]...
+
+]] authType: ECDHE_RSA
+2022-10-05 18:46:27,069 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-2] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@472f3df0
+2022-10-05 18:46:28,343 DEBUG c.i.d.s.s.ServiceImp [http-nio-8081-exec-2] doSchedule() responseJSON: {"error":false,"statusCode":200,"message":"OK","data":{"recovered":null,"deaths":45486,"confirmed":4287508,"lastChecked":"2022-10-05T11:05:51+00:00","lastReported":"2022-10-05T04:23:06+00:00","location":"Canada"}}
+2022-10-05 18:47:00,371 DEBUG c.i.d.s.s.ServiceImp [http-nio-8081-exec-2] getMessageBody() A JSONObject text must begin with '{' at 1 [character 2 line 1]
+2022-10-05 18:47:12,422 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-3] Initialising httpUtil with default configuration ignoreCertificate: true
+2022-10-05 18:47:12,431 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-3] configureToIgnoreCertificate Builder: okhttp3.OkHttpClient$Builder@356465e7
+2022-10-05 18:47:12,447 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@356465e7
+2022-10-05 18:47:18,114 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] checkServerTrusted chain: [[
+[
+  Version: V3
+  Subject: CN=*.p.rapidapi.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21154787475477487457715228792401611764400760598600972467903271839980418181232632547580009664516493042174658953311808910227447726603326973464150198068644289665727567272120035473742606438108203027313688472451388541830990354978600662453350723336884643935059455328067042422795096193079608340769232138963503352947031679916511763704883825327896337908628842693118409494130638711237879345751026794080037135895226473376747867380942840945943607622024439397804498499368094958287747344842289575638619181632543456025309093343086602589107393117317314598062494663312472476430803406516011573090592170575057248793094431177797799011637
+  public exponent: 65537
+  Validity: [From: Fri Jul 08 07:00:00 WIB 2022,
+               To: Mon Aug 07 06:59:59 WIB 2023]
+  Issuer: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  SerialNumber: [    0dc46029 b68dca56 71a43222 516e0d86]
+
+Certificate Extensions: 10
+[1]: ObjectId: 1.3.6.1.4.1.11129.2.4.2 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 82 01 6D 04 82 01 69   01 67 00 76 00 E8 3E D0  ...m...i.g.v..>.
+0010: DA 3E F5 06 35 32 E7 57   28 BC 89 6B C9 03 D3 CB  .>..52.W(..k....
+0020: D1 11 6B EC EB 69 E1 77   7D 6D 06 BD 6E 00 00 01  ..k..i.w.m..n...
+0030: 81 DB 35 E1 EA 00 00 04   03 00 47 30 45 02 20 61  ..5.......G0E. a
+0040: 97 06 E4 6B F7 03 4F 7D   2C 63 B4 6C 33 E2 3D B8  ...k..O.,c.l3.=.
+0050: 69 7A 2D 11 62 EF 6B 1B   B6 FF AB A8 2A 4A 24 02  iz-.b.k.....*J$.
+0060: 21 00 D3 02 86 27 82 05   A5 9E E9 1D F3 E6 4B 4F  !....'........KO
+0070: 22 FA 8E 4B D9 C7 84 30   87 26 3B 41 EF B5 85 F3  "..K...0.&;A....
+0080: 18 06 00 76 00 35 CF 19   1B BF B1 6C 57 BF 0F AD  ...v.5.....lW...
+0090: 4C 6D 42 CB BB B6 27 20   26 51 EA 3F E1 2A EF A8  LmB...' &Q.?.*..
+00A0: 03 C3 3B D6 4C 00 00 01   81 DB 35 E1 42 00 00 04  ..;.L.....5.B...
+00B0: 03 00 47 30 45 02 21 00   CC EA 32 C4 A6 99 B5 F9  ..G0E.!...2.....
+00C0: 16 D3 B8 BB 21 27 69 83   D2 2B 5D A5 26 64 5E 25  ....!'i..+].&d^%
+00D0: 73 CD 2A 12 3D F3 CD 4F   02 20 23 F2 27 FD 55 99  s.*.=..O. #.'.U.
+00E0: 83 C5 01 3C 34 D9 C3 64   C3 1B 20 C4 80 26 CD 2F  ...<4..d.. ..&./
+00F0: 1D 57 62 69 D5 FA C7 EA   7C 7A 00 75 00 B3 73 77  .Wbi.....z.u..sw
+0100: 07 E1 84 50 F8 63 86 D6   05 A9 DC 11 09 4A 79 2D  ...P.c.......Jy-
+0110: B1 67 0C 0B 87 DC F0 03   0E 79 36 A5 9A 00 00 01  .g.......y6.....
+0120: 81 DB 35 E1 80 00 00 04   03 00 46 30 44 02 20 54  ..5.......F0D. T
+0130: 4C C3 3A 62 67 6E 67 F0   4D C3 C6 F3 1E A3 16 59  L.:bgng.M......Y
+0140: E6 C9 47 15 03 05 EA 43   34 3E 51 2E 01 C4 32 02  ..G....C4>Q...2.
+0150: 20 62 17 37 5B 82 CB 97   D4 05 28 42 2B DB 9E 50   b.7[.....(B+..P
+0160: F4 C7 BC 01 D1 66 9B F7   63 76 DE 38 B2 EF A8 0C  .....f..cv.8....
+0170: 19                                                 .
+
+
+[2]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.sca1b.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.sca1b.amazontrust.com/sca1b.crt
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+[4]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:false
+  PathLen: undefined
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.sca1b.amazontrust.com/sca1b-1.crl]
+]]
+
+[6]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[7]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+]
+
+[8]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[9]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: *.p.rapidapi.com
+]
+
+[10]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 85 F5 E8 B7 AF 54 09   C5 30 E1 49 09 61 61 89  ......T..0.I.aa.
+0010: D9 F0 93 8B                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: AC 13 2A 1E 0B 5F 08 2C   D4 27 2D 11 82 57 64 2B  ..*.._.,.'-..Wd+
+0010: 8D 09 81 0D 43 07 34 AF   B0 98 82 6D C3 B2 7B 58  ....C.4....m...X
+0020: 86 E0 83 89 22 E2 7D C2   E8 B8 5E E5 E3 A7 85 4E  ....".....^....N
+0030: 00 91 45 6B 19 28 2C A6   30 DC 03 BF 7A FA A7 72  ..Ek.(,.0...z..r
+0040: A3 54 76 56 A7 C6 DE D3   B7 45 15 C4 AD C2 D7 95  .TvV.....E......
+0050: D7 A1 F0 11 02 E9 F9 0E   96 C4 7C E5 5C 15 79 02  ............\.y.
+0060: D7 5B AA 60 3F B9 23 ED   EE 23 1A 7E 77 98 BB 82  .[.`?.#..#..w...
+0070: 13 72 B4 C1 B6 32 6C 42   2F 0E F2 85 64 20 CF CE  .r...2lB/...d ..
+0080: D5 77 02 F9 B1 73 4A BC   57 43 2E 7F BE 9A D3 41  .w...sJ.WC.....A
+0090: 1C AD A0 64 4F 3C 43 26   E0 05 7A FD DC D2 02 5A  ...dO<C&..z....Z
+00A0: D2 54 C0 31 F0 4E A4 70   96 1D 68 35 3E 42 F3 0A  .T.1.N.p..h5>B..
+00B0: 74 81 B0 8B 80 19 44 09   87 50 11 BB D8 24 38 67  t.....D..P...$8g
+00C0: 8D 05 67 14 65 FE 65 5F   49 4D AE 9E DC 78 6D 20  ..g.e.e_IM...xm 
+00D0: 8C DC AC 70 78 EC E3 B7   D2 61 97 42 3E 14 45 CC  ...px....a.B>.E.
+00E0: E8 4D 60 10 F0 6B 10 49   0D BC 39 63 F4 AC 66 81  .M`..k.I..9c..f.
+00F0: C3 CE D0 D3 43 E2 29 3D   84 49 3C 25 33 C3 5A 25  ....C.)=.I<%3.Z%
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24528737555851895213919827617064808536856788789868126310716752303420041319710819680867697306230985630039655096548324364189962675576756038921107965025585889330528490649228935527969954506874750514159926943451238689552458142167021149788529783891257271028002485075630471793111207960868638365698705018555597520367289025831586046483446904825820575805338475813865444295353094097022678376192149453480223428943386514159000527368947588174705227657134217583008630047462959260157651883088072156905420231950318110240318878613016990846576820326568049365612395397183597930457965295993595011597251067348997341253617591444999389873893
+  public exponent: 65537
+  Validity: [From: Thu Oct 22 07:00:00 WIB 2015,
+               To: Sun Oct 19 07:00:00 WIB 2025]
+  Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+  SerialNumber: [    067f9457 8587e8ac 77deb253 325bbc99 8b560d]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootca1.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootca1.amazontrust.com/rootca1.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:0
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootca1.amazontrust.com/rootca1.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 85 92 BE 35 BB 79 CF A3   81 42 1C E4 E3 63 73 53  ...5.y...B...csS
+0010: 39 52 35 E7 D1 AD FD AE   99 8A AC 89 12 2F BB E7  9R5........../..
+0020: 6F 9A D5 4E 72 EA 20 30   61 F9 97 B2 CD A5 27 02  o..Nr. 0a.....'.
+0030: 45 A8 CA 76 3E 98 4A 83   9E B6 E6 45 E0 F2 43 F6  E..v>.J....E..C.
+0040: 08 DE 6D E8 6E DB 31 07   13 F0 2F 31 0D 93 6D 61  ..m.n.1.../1..ma
+0050: 37 7B 58 F0 FC 51 98 91   28 02 4F 05 76 B7 D3 F0  7.X..Q..(.O.v...
+0060: 1B C2 E6 5E D0 66 85 11   0F 2E 81 C6 10 81 29 FE  ...^.f........).
+0070: 20 60 48 F3 F2 F0 84 13   53 65 35 15 11 6B 82 51   `H.....Se5..k.Q
+0080: 40 55 57 5F 18 B5 B0 22   3E AD F2 5E A3 01 E3 C3  @UW_...">..^....
+0090: B3 F9 CB 41 5A E6 52 91   BB E4 36 87 4F 2D A9 A4  ...AZ.R...6.O-..
+00A0: 07 68 35 BA 94 72 CD 0E   EA 0E 7D 57 F2 79 FC 37  .h5..r.....W.y.7
+00B0: C5 7B 60 9E B2 EB C0 2D   90 77 0D 49 10 27 A5 38  ..`....-.w.I.'.8
+00C0: AD C4 12 A3 B4 A3 C8 48   B3 15 0B 1E E2 E2 19 DC  .......H........
+00D0: C4 76 52 C8 BC 8A 41 78   70 D9 6D 97 B3 4A 8B 78  .vR...Axp.m..J.x
+00E0: 2D 5E B4 0F A3 4C 60 CA   E1 47 CB 78 2D 12 17 B1  -^...L`..G.x-...
+00F0: 52 8B CA 39 2C BD B5 2F   C2 33 02 96 AB DA 94 7F  R..9,../.3......
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon Root CA 1, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22529839904807742196558773392430766620630713202204326167346456925862066285712069978308045976033918808540171076811098215136401323342247576789054764683787147408289170989302937775178809187827657352584557953877946352196797789035355954596527030584944622221752357105572088106020206921431118198373122638305846252087992561841631797199384157902018140720267433956687491591657652730221337591680012205319549572614035105482287002884850178224609018864719685310905426619874727796905080238179726224664042154200651710137931048812546957419686875805576245376866031854569863410951649630469236463991472642618512857920826701027482532358669
+  public exponent: 65537
+  Validity: [From: Mon May 25 19:00:00 WIB 2015,
+               To: Thu Dec 31 08:00:00 WIB 2037]
+  Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  SerialNumber: [    067f944a 2a27cdf3 fac2ae2b 01f908ee b9c4c6]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootg2.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootg2.amazontrust.com/rootg2.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootg2.amazontrust.com/rootg2.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 62 37 42 5C BC 10 B5 3E   8B 2C E9 0C 9B 6C 45 E2  b7B\...>.,...lE.
+0010: 07 00 7A F9 C5 58 0B B9   08 8C 3E ED B3 25 3C B5  ..z..X....>..%<.
+0020: 6F 50 E4 CD 35 6A A7 93   34 96 32 21 A9 48 44 AB  oP..5j..4.2!.HD.
+0030: 9C ED 3D B4 AA 73 6D E4   7F 16 80 89 6C CF 28 03  ..=..sm.....l.(.
+0040: 18 83 47 79 A3 10 7E 30   5B AC 3B B0 60 E0 77 D4  ..Gy...0[.;.`.w.
+0050: 08 A6 E1 1D 7C 5E C0 BB   F9 9A 7B 22 9D A7 00 09  .....^....."....
+0060: 7E AC 46 17 83 DC 9C 26   57 99 30 39 62 96 8F ED  ..F....&W.09b...
+0070: DA DE AA C5 CC 1B 3E CA   43 68 6C 57 16 BC D5 0E  ......>.ChlW....
+0080: 20 2E FE FF C2 6A 5D 2E   A0 4A 6D 14 58 87 94 E6   ....j]..Jm.X...
+0090: 39 31 5F 7C 73 CB 90 88   6A 84 11 96 27 A6 ED D9  91_.s...j...'...
+00A0: 81 46 A6 7E A3 72 00 0A   52 3E 83 88 07 63 77 89  .F...r..R>...cw.
+00B0: 69 17 0F 39 85 D2 AB 08   45 4D D0 51 3A FD 5D 5D  i..9....EM.Q:.]]
+00C0: 37 64 4C 7E 30 B2 55 24   42 9D 36 B0 5D 9C 17 81  7dL.0.U$B.6.]...
+00D0: 61 F1 CA F9 10 02 24 AB   EB 0D 74 91 8D 7B 45 29  a.....$...t...E)
+00E0: 50 39 88 B2 A6 89 35 25   1E 14 6A 47 23 31 2F 5C  P9....5%..jG#1/\
+00F0: 9A FA AD 9A 0E 62 51 A4   2A A9 C4 F9 34 9D 21 18  .....bQ.*...4.!.
+
+], [
+[
+  Version: V3
+  Subject: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26894789576491863019171445242018370132029525033879210664513024255165308689836081694724912552986436241602345929261854187816625921774943728567119070351838976265193901442169339571326613928339955106648223197498035701437846440970934704192382084561469274550003268570741310868032789070264835003681318445644941362885752628282968349509706358865971392279088395067847314610178969555804359319567178098112935181143559364150874524817692694181296058297355335204675211145990489303168553611700020424738364579606192390834705213026692659672388567853246354560726855054573503174641583891075106464210711468427779853334564691648681991700229
+  public exponent: 65537
+  Validity: [From: Wed Sep 02 07:00:00 WIB 2009,
+               To: Thu Jun 29 00:39:16 WIB 2034]
+  Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+  SerialNumber: [    a70e4a4c 3482b77f]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://o.ss2.us/
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://x.ss2.us/x.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: BF 5F B7 D1 CE DD 1F 86   F4 5B 55 AC DC D7 10 C2  ._.......[U.....
+0010: 0E A9 88 E7                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://s.ss2.us/r.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 23 1D E3 8A 57 CA 7D E9   17 79 4C F1 1E 55 FD CC  #...W....yL..U..
+0010: 53 6E 3E 47 0F DF C6 55   F2 B2 04 36 ED 80 1F 53  Sn>G...U...6...S
+0020: C4 5D 34 28 6B BE C7 55   FC 67 EA CB 3F 7F 90 B2  .]4(k..U.g..?...
+0030: 33 CD 1B 58 10 82 02 F8   F8 2F F5 13 60 D4 05 CE  3..X...../..`...
+0040: F1 81 08 C1 DD A7 75 97   4F 18 B9 6D DE F7 93 91  ......u.O..m....
+0050: 08 BA 7E 40 2C ED C1 EA   BB 76 9E 33 06 77 1D 0D  ...@,....v.3.w..
+0060: 08 7F 53 DD 1B 64 AB 82   27 F1 69 D5 4D 5E AE F4  ..S..d..'.i.M^..
+0070: A1 C3 75 A7 58 44 2D F2   3C 70 98 AC BA 69 B6 95  ..u.XD-.<p...i..
+0080: 77 7F 0F 31 5E 2C FC A0   87 3A 47 69 F0 79 5F F4  w..1^,...:Gi.y_.
+0090: 14 54 A4 95 5E 11 78 12   60 27 CE 9F C2 77 FF 23  .T..^.x.`'...w.#
+00A0: 53 77 5D BA FF EA 59 E7   DB CF AF 92 96 EF 24 9A  Sw]...Y.......$.
+00B0: 35 10 7A 9C 91 C6 0E 7D   99 F6 3F 19 DF F5 72 54  5.z.......?...rT
+00C0: E1 15 A9 07 59 7B 83 BF   52 2E 46 8C B2 00 64 76  ....Y...R.F...dv
+00D0: 1C 48 D3 D8 79 E8 6E 56   CC AE 2C 03 90 D7 19 38  .H..y.nV..,....8
+00E0: 99 E4 CA 09 19 5B FF 07   96 B0 A8 7F 34 49 DF 56  .....[......4I.V
+00F0: A9 F7 B0 5F ED 33 ED 8C   47 B7 30 03 5D F4 03 8C  ..._.3..G.0.]...
+
+]] authType: ECDHE_RSA
+2022-10-05 18:47:20,523 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@356465e7
+2022-10-05 18:48:22,488 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-3] Initialising httpUtil with default configuration ignoreCertificate: true
+2022-10-05 18:48:22,495 DEBUG c.i.d.s.u.OkHttpUtil [http-nio-8081-exec-3] configureToIgnoreCertificate Builder: okhttp3.OkHttpClient$Builder@2e6008d3
+2022-10-05 18:48:22,505 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@2e6008d3
+2022-10-05 18:48:23,664 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] checkServerTrusted chain: [[
+[
+  Version: V3
+  Subject: CN=*.p.rapidapi.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21154787475477487457715228792401611764400760598600972467903271839980418181232632547580009664516493042174658953311808910227447726603326973464150198068644289665727567272120035473742606438108203027313688472451388541830990354978600662453350723336884643935059455328067042422795096193079608340769232138963503352947031679916511763704883825327896337908628842693118409494130638711237879345751026794080037135895226473376747867380942840945943607622024439397804498499368094958287747344842289575638619181632543456025309093343086602589107393117317314598062494663312472476430803406516011573090592170575057248793094431177797799011637
+  public exponent: 65537
+  Validity: [From: Fri Jul 08 07:00:00 WIB 2022,
+               To: Mon Aug 07 06:59:59 WIB 2023]
+  Issuer: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  SerialNumber: [    0dc46029 b68dca56 71a43222 516e0d86]
+
+Certificate Extensions: 10
+[1]: ObjectId: 1.3.6.1.4.1.11129.2.4.2 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 82 01 6D 04 82 01 69   01 67 00 76 00 E8 3E D0  ...m...i.g.v..>.
+0010: DA 3E F5 06 35 32 E7 57   28 BC 89 6B C9 03 D3 CB  .>..52.W(..k....
+0020: D1 11 6B EC EB 69 E1 77   7D 6D 06 BD 6E 00 00 01  ..k..i.w.m..n...
+0030: 81 DB 35 E1 EA 00 00 04   03 00 47 30 45 02 20 61  ..5.......G0E. a
+0040: 97 06 E4 6B F7 03 4F 7D   2C 63 B4 6C 33 E2 3D B8  ...k..O.,c.l3.=.
+0050: 69 7A 2D 11 62 EF 6B 1B   B6 FF AB A8 2A 4A 24 02  iz-.b.k.....*J$.
+0060: 21 00 D3 02 86 27 82 05   A5 9E E9 1D F3 E6 4B 4F  !....'........KO
+0070: 22 FA 8E 4B D9 C7 84 30   87 26 3B 41 EF B5 85 F3  "..K...0.&;A....
+0080: 18 06 00 76 00 35 CF 19   1B BF B1 6C 57 BF 0F AD  ...v.5.....lW...
+0090: 4C 6D 42 CB BB B6 27 20   26 51 EA 3F E1 2A EF A8  LmB...' &Q.?.*..
+00A0: 03 C3 3B D6 4C 00 00 01   81 DB 35 E1 42 00 00 04  ..;.L.....5.B...
+00B0: 03 00 47 30 45 02 21 00   CC EA 32 C4 A6 99 B5 F9  ..G0E.!...2.....
+00C0: 16 D3 B8 BB 21 27 69 83   D2 2B 5D A5 26 64 5E 25  ....!'i..+].&d^%
+00D0: 73 CD 2A 12 3D F3 CD 4F   02 20 23 F2 27 FD 55 99  s.*.=..O. #.'.U.
+00E0: 83 C5 01 3C 34 D9 C3 64   C3 1B 20 C4 80 26 CD 2F  ...<4..d.. ..&./
+00F0: 1D 57 62 69 D5 FA C7 EA   7C 7A 00 75 00 B3 73 77  .Wbi.....z.u..sw
+0100: 07 E1 84 50 F8 63 86 D6   05 A9 DC 11 09 4A 79 2D  ...P.c.......Jy-
+0110: B1 67 0C 0B 87 DC F0 03   0E 79 36 A5 9A 00 00 01  .g.......y6.....
+0120: 81 DB 35 E1 80 00 00 04   03 00 46 30 44 02 20 54  ..5.......F0D. T
+0130: 4C C3 3A 62 67 6E 67 F0   4D C3 C6 F3 1E A3 16 59  L.:bgng.M......Y
+0140: E6 C9 47 15 03 05 EA 43   34 3E 51 2E 01 C4 32 02  ..G....C4>Q...2.
+0150: 20 62 17 37 5B 82 CB 97   D4 05 28 42 2B DB 9E 50   b.7[.....(B+..P
+0160: F4 C7 BC 01 D1 66 9B F7   63 76 DE 38 B2 EF A8 0C  .....f..cv.8....
+0170: 19                                                 .
+
+
+[2]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.sca1b.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.sca1b.amazontrust.com/sca1b.crt
+]
+]
+
+[3]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+[4]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:false
+  PathLen: undefined
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.sca1b.amazontrust.com/sca1b-1.crl]
+]]
+
+[6]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[7]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+]
+
+[8]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[9]: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: *.p.rapidapi.com
+]
+
+[10]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D6 85 F5 E8 B7 AF 54 09   C5 30 E1 49 09 61 61 89  ......T..0.I.aa.
+0010: D9 F0 93 8B                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: AC 13 2A 1E 0B 5F 08 2C   D4 27 2D 11 82 57 64 2B  ..*.._.,.'-..Wd+
+0010: 8D 09 81 0D 43 07 34 AF   B0 98 82 6D C3 B2 7B 58  ....C.4....m...X
+0020: 86 E0 83 89 22 E2 7D C2   E8 B8 5E E5 E3 A7 85 4E  ....".....^....N
+0030: 00 91 45 6B 19 28 2C A6   30 DC 03 BF 7A FA A7 72  ..Ek.(,.0...z..r
+0040: A3 54 76 56 A7 C6 DE D3   B7 45 15 C4 AD C2 D7 95  .TvV.....E......
+0050: D7 A1 F0 11 02 E9 F9 0E   96 C4 7C E5 5C 15 79 02  ............\.y.
+0060: D7 5B AA 60 3F B9 23 ED   EE 23 1A 7E 77 98 BB 82  .[.`?.#..#..w...
+0070: 13 72 B4 C1 B6 32 6C 42   2F 0E F2 85 64 20 CF CE  .r...2lB/...d ..
+0080: D5 77 02 F9 B1 73 4A BC   57 43 2E 7F BE 9A D3 41  .w...sJ.WC.....A
+0090: 1C AD A0 64 4F 3C 43 26   E0 05 7A FD DC D2 02 5A  ...dO<C&..z....Z
+00A0: D2 54 C0 31 F0 4E A4 70   96 1D 68 35 3E 42 F3 0A  .T.1.N.p..h5>B..
+00B0: 74 81 B0 8B 80 19 44 09   87 50 11 BB D8 24 38 67  t.....D..P...$8g
+00C0: 8D 05 67 14 65 FE 65 5F   49 4D AE 9E DC 78 6D 20  ..g.e.e_IM...xm 
+00D0: 8C DC AC 70 78 EC E3 B7   D2 61 97 42 3E 14 45 CC  ...px....a.B>.E.
+00E0: E8 4D 60 10 F0 6B 10 49   0D BC 39 63 F4 AC 66 81  .M`..k.I..9c..f.
+00F0: C3 CE D0 D3 43 E2 29 3D   84 49 3C 25 33 C3 5A 25  ....C.)=.I<%3.Z%
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24528737555851895213919827617064808536856788789868126310716752303420041319710819680867697306230985630039655096548324364189962675576756038921107965025585889330528490649228935527969954506874750514159926943451238689552458142167021149788529783891257271028002485075630471793111207960868638365698705018555597520367289025831586046483446904825820575805338475813865444295353094097022678376192149453480223428943386514159000527368947588174705227657134217583008630047462959260157651883088072156905420231950318110240318878613016990846576820326568049365612395397183597930457965295993595011597251067348997341253617591444999389873893
+  public exponent: 65537
+  Validity: [From: Thu Oct 22 07:00:00 WIB 2015,
+               To: Sun Oct 19 07:00:00 WIB 2025]
+  Issuer: CN=Amazon Root CA 1, O=Amazon, C=US
+  SerialNumber: [    067f9457 8587e8ac 77deb253 325bbc99 8b560d]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootca1.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootca1.amazontrust.com/rootca1.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:0
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootca1.amazontrust.com/rootca1.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.23.140.1.2.1]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 59 A4 66 06 52 A0 7B 95   92 3C A3 94 07 27 96 74  Y.f.R....<...'.t
+0010: 5B F9 3D D0                                        [.=.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 85 92 BE 35 BB 79 CF A3   81 42 1C E4 E3 63 73 53  ...5.y...B...csS
+0010: 39 52 35 E7 D1 AD FD AE   99 8A AC 89 12 2F BB E7  9R5........../..
+0020: 6F 9A D5 4E 72 EA 20 30   61 F9 97 B2 CD A5 27 02  o..Nr. 0a.....'.
+0030: 45 A8 CA 76 3E 98 4A 83   9E B6 E6 45 E0 F2 43 F6  E..v>.J....E..C.
+0040: 08 DE 6D E8 6E DB 31 07   13 F0 2F 31 0D 93 6D 61  ..m.n.1.../1..ma
+0050: 37 7B 58 F0 FC 51 98 91   28 02 4F 05 76 B7 D3 F0  7.X..Q..(.O.v...
+0060: 1B C2 E6 5E D0 66 85 11   0F 2E 81 C6 10 81 29 FE  ...^.f........).
+0070: 20 60 48 F3 F2 F0 84 13   53 65 35 15 11 6B 82 51   `H.....Se5..k.Q
+0080: 40 55 57 5F 18 B5 B0 22   3E AD F2 5E A3 01 E3 C3  @UW_...">..^....
+0090: B3 F9 CB 41 5A E6 52 91   BB E4 36 87 4F 2D A9 A4  ...AZ.R...6.O-..
+00A0: 07 68 35 BA 94 72 CD 0E   EA 0E 7D 57 F2 79 FC 37  .h5..r.....W.y.7
+00B0: C5 7B 60 9E B2 EB C0 2D   90 77 0D 49 10 27 A5 38  ..`....-.w.I.'.8
+00C0: AD C4 12 A3 B4 A3 C8 48   B3 15 0B 1E E2 E2 19 DC  .......H........
+00D0: C4 76 52 C8 BC 8A 41 78   70 D9 6D 97 B3 4A 8B 78  .vR...Axp.m..J.x
+00E0: 2D 5E B4 0F A3 4C 60 CA   E1 47 CB 78 2D 12 17 B1  -^...L`..G.x-...
+00F0: 52 8B CA 39 2C BD B5 2F   C2 33 02 96 AB DA 94 7F  R..9,../.3......
+
+], [
+[
+  Version: V3
+  Subject: CN=Amazon Root CA 1, O=Amazon, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22529839904807742196558773392430766620630713202204326167346456925862066285712069978308045976033918808540171076811098215136401323342247576789054764683787147408289170989302937775178809187827657352584557953877946352196797789035355954596527030584944622221752357105572088106020206921431118198373122638305846252087992561841631797199384157902018140720267433956687491591657652730221337591680012205319549572614035105482287002884850178224609018864719685310905426619874727796905080238179726224664042154200651710137931048812546957419686875805576245376866031854569863410951649630469236463991472642618512857920826701027482532358669
+  public exponent: 65537
+  Validity: [From: Mon May 25 19:00:00 WIB 2015,
+               To: Thu Dec 31 08:00:00 WIB 2037]
+  Issuer: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  SerialNumber: [    067f944a 2a27cdf3 fac2ae2b 01f908ee b9c4c6]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://ocsp.rootg2.amazontrust.com
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://crt.rootg2.amazontrust.com/rootg2.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.rootg2.amazontrust.com/rootg2.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 84 18 CC 85 34 EC BC 0C   94 94 2E 08 59 9C C7 B2  ....4.......Y...
+0010: 10 4E 0A 08                                        .N..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 62 37 42 5C BC 10 B5 3E   8B 2C E9 0C 9B 6C 45 E2  b7B\...>.,...lE.
+0010: 07 00 7A F9 C5 58 0B B9   08 8C 3E ED B3 25 3C B5  ..z..X....>..%<.
+0020: 6F 50 E4 CD 35 6A A7 93   34 96 32 21 A9 48 44 AB  oP..5j..4.2!.HD.
+0030: 9C ED 3D B4 AA 73 6D E4   7F 16 80 89 6C CF 28 03  ..=..sm.....l.(.
+0040: 18 83 47 79 A3 10 7E 30   5B AC 3B B0 60 E0 77 D4  ..Gy...0[.;.`.w.
+0050: 08 A6 E1 1D 7C 5E C0 BB   F9 9A 7B 22 9D A7 00 09  .....^....."....
+0060: 7E AC 46 17 83 DC 9C 26   57 99 30 39 62 96 8F ED  ..F....&W.09b...
+0070: DA DE AA C5 CC 1B 3E CA   43 68 6C 57 16 BC D5 0E  ......>.ChlW....
+0080: 20 2E FE FF C2 6A 5D 2E   A0 4A 6D 14 58 87 94 E6   ....j]..Jm.X...
+0090: 39 31 5F 7C 73 CB 90 88   6A 84 11 96 27 A6 ED D9  91_.s...j...'...
+00A0: 81 46 A6 7E A3 72 00 0A   52 3E 83 88 07 63 77 89  .F...r..R>...cw.
+00B0: 69 17 0F 39 85 D2 AB 08   45 4D D0 51 3A FD 5D 5D  i..9....EM.Q:.]]
+00C0: 37 64 4C 7E 30 B2 55 24   42 9D 36 B0 5D 9C 17 81  7dL.0.U$B.6.]...
+00D0: 61 F1 CA F9 10 02 24 AB   EB 0D 74 91 8D 7B 45 29  a.....$...t...E)
+00E0: 50 39 88 B2 A6 89 35 25   1E 14 6A 47 23 31 2F 5C  P9....5%..jG#1/\
+00F0: 9A FA AD 9A 0E 62 51 A4   2A A9 C4 F9 34 9D 21 18  .....bQ.*...4.!.
+
+], [
+[
+  Version: V3
+  Subject: CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26894789576491863019171445242018370132029525033879210664513024255165308689836081694724912552986436241602345929261854187816625921774943728567119070351838976265193901442169339571326613928339955106648223197498035701437846440970934704192382084561469274550003268570741310868032789070264835003681318445644941362885752628282968349509706358865971392279088395067847314610178969555804359319567178098112935181143559364150874524817692694181296058297355335204675211145990489303168553611700020424738364579606192390834705213026692659672388567853246354560726855054573503174641583891075106464210711468427779853334564691648681991700229
+  public exponent: 65537
+  Validity: [From: Wed Sep 02 07:00:00 WIB 2009,
+               To: Thu Jun 29 00:39:16 WIB 2034]
+  Issuer: OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US
+  SerialNumber: [    a70e4a4c 3482b77f]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.3.6.1.5.5.7.1.1 Criticality=false
+AuthorityInfoAccess [
+  [
+   accessMethod: ocsp
+   accessLocation: URIName: http://o.ss2.us/
+, 
+   accessMethod: caIssuers
+   accessLocation: URIName: http://x.ss2.us/x.cer
+]
+]
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: BF 5F B7 D1 CE DD 1F 86   F4 5B 55 AC DC D7 10 C2  ._.......[U.....
+0010: 0E A9 88 E7                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://s.ss2.us/r.crl]
+]]
+
+[5]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [2.5.29.32.0]
+[]  ]
+]
+
+[6]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9C 5F 00 DF AA 01 D7 30   2B 38 88 A2 B8 6D 4A 9C  ._.....0+8...mJ.
+0010: F2 11 91 83                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 23 1D E3 8A 57 CA 7D E9   17 79 4C F1 1E 55 FD CC  #...W....yL..U..
+0010: 53 6E 3E 47 0F DF C6 55   F2 B2 04 36 ED 80 1F 53  Sn>G...U...6...S
+0020: C4 5D 34 28 6B BE C7 55   FC 67 EA CB 3F 7F 90 B2  .]4(k..U.g..?...
+0030: 33 CD 1B 58 10 82 02 F8   F8 2F F5 13 60 D4 05 CE  3..X...../..`...
+0040: F1 81 08 C1 DD A7 75 97   4F 18 B9 6D DE F7 93 91  ......u.O..m....
+0050: 08 BA 7E 40 2C ED C1 EA   BB 76 9E 33 06 77 1D 0D  ...@,....v.3.w..
+0060: 08 7F 53 DD 1B 64 AB 82   27 F1 69 D5 4D 5E AE F4  ..S..d..'.i.M^..
+0070: A1 C3 75 A7 58 44 2D F2   3C 70 98 AC BA 69 B6 95  ..u.XD-.<p...i..
+0080: 77 7F 0F 31 5E 2C FC A0   87 3A 47 69 F0 79 5F F4  w..1^,...:Gi.y_.
+0090: 14 54 A4 95 5E 11 78 12   60 27 CE 9F C2 77 FF 23  .T..^.x.`'...w.#
+00A0: 53 77 5D BA FF EA 59 E7   DB CF AF 92 96 EF 24 9A  Sw]...Y.......$.
+00B0: 35 10 7A 9C 91 C6 0E 7D   99 F6 3F 19 DF F5 72 54  5.z.......?...rT
+00C0: E1 15 A9 07 59 7B 83 BF   52 2E 46 8C B2 00 64 76  ....Y...R.F...dv
+00D0: 1C 48 D3 D8 79 E8 6E 56   CC AE 2C 03 90 D7 19 38  .H..y.nV..,....8
+00E0: 99 E4 CA 09 19 5B FF 07   96 B0 A8 7F 34 49 DF 56  .....[......4I.V
+00F0: A9 F7 B0 5F ED 33 ED 8C   47 B7 30 03 5D F4 03 8C  ..._.3..G.0.]...
+
+]] authType: ECDHE_RSA
+2022-10-05 18:48:24,035 DEBUG c.i.d.s.u.OkHttpUtil$1 [http-nio-8081-exec-3] getAcceptedIssuers builder: okhttp3.OkHttpClient$Builder@2e6008d3
+2022-10-05 18:48:26,865 DEBUG c.i.d.s.s.ServiceImp [http-nio-8081-exec-3] doSchedule() responseJSON: {"error":false,"statusCode":200,"message":"OK","data":{"recovered":null,"deaths":45486,"confirmed":4287508,"lastChecked":"2022-10-05T11:05:51+00:00","lastReported":"2022-10-05T04:23:06+00:00","location":"Canada"}}
+2022-10-05 18:50:48,297 WARN o.i.p.Platform [OkHttp ConnectionPool] A connection to https://covid-19-coronavirus-statistic.p.rapidapi.com/ was leaked. Did you forget to close a response body? To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);
